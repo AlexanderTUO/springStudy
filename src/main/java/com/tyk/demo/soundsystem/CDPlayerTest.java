@@ -21,19 +21,20 @@ public class CDPlayerTest {
     public final SystemOutRule rule = new SystemOutRule();
 
     @Autowired
-    private CompactDisc compactDisc;
+    private CompactDisc randomCompactDisc;
 
     @Autowired
     private MediaPlayer mediaPlayer;
 
     @Test
     public void cdShouldNotBeNull() {
-        assertNotNull(compactDisc);
+        assertNotNull(randomCompactDisc);
     }
 
     @Test
     public void play() {
         mediaPlayer.play();
+//        assertEquals("艺术家假老练演唱卖大米",rule.getLog());
     }
 
 
